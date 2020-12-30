@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "https://marabesi.github.io/testable/static/css/main.eff273a6.chunk.css",
+    "main.js": "https://marabesi.github.io/testable/static/js/main.17480925.chunk.js",
+    "main.js.map": "https://marabesi.github.io/testable/static/js/main.17480925.chunk.js.map",
+    "runtime-main.js": "https://marabesi.github.io/testable/static/js/runtime-main.502d5212.js",
+    "runtime-main.js.map": "https://marabesi.github.io/testable/static/js/runtime-main.502d5212.js.map",
+    "static/css/2.a3d0d601.chunk.css": "https://marabesi.github.io/testable/static/css/2.a3d0d601.chunk.css",
+    "static/js/2.5b409778.chunk.js": "https://marabesi.github.io/testable/static/js/2.5b409778.chunk.js",
+    "static/js/2.5b409778.chunk.js.map": "https://marabesi.github.io/testable/static/js/2.5b409778.chunk.js.map",
+    "index.html": "https://marabesi.github.io/testable/index.html",
+    "static/css/2.a3d0d601.chunk.css.map": "https://marabesi.github.io/testable/static/css/2.a3d0d601.chunk.css.map",
+    "static/css/main.eff273a6.chunk.css.map": "https://marabesi.github.io/testable/static/css/main.eff273a6.chunk.css.map",
+    "static/js/2.5b409778.chunk.js.LICENSE.txt": "https://marabesi.github.io/testable/static/js/2.5b409778.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "https://marabesi.github.io/testable/static/media/bg-loading.90dd29f3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.502d5212.js",
+    "static/css/2.a3d0d601.chunk.css",
+    "static/js/2.5b409778.chunk.js",
+    "static/css/main.eff273a6.chunk.css",
+    "static/js/main.17480925.chunk.js"
+  ]
+}
