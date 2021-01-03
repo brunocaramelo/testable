@@ -9,6 +9,7 @@ services:
       file: ./docker-compose.yml
       service: testable
     environment:
+      - PUBLIC_URL=$PUBLIC_URL
       - REACT_APP_FIREBASE_JSON=$REACT_APP_FIREBASE_JSON
       - REACT_APP_RANKING_API=$REACT_APP_RANKING_API
       - REACT_APP_SURVEY_URL=$REACT_APP_SURVEY_URL
@@ -19,19 +20,21 @@ services:
       - ./webapp:/var/www/app
     command: npm run start
     stdin_open: true
+  docs:
+    image: node:14-slim
+    working_dir: /docs
+    volumes:
+      - ./webapp:/docs
     ports:
-      - $TESTABLE_PORT:$TESTABLE_PORT
+      - 6060:6060
+    command: npm run docs
   ranking:
     extends:
       file: ./docker-compose.yml
       service: ranking
-    environment:
-      - PORT=$RANKING_PORT
     build:
       context: ./ranking-api
     user: 'node'
     volumes:
       - ./ranking-api:/var/www/ranking_api
-    command: node index.js
-    ports:
-      - $RANKING_PORT:$RANKING_PORT
+    command: npm run dev

@@ -6,14 +6,14 @@ import { AnimatedSwitch } from 'react-router-transition';
 import { IntlProvider } from 'react-intl';
 import PropTypes from 'prop-types';
 import { mapStyles, bounceTransition } from './transition';
+import { messages } from './constants/locale';
 import ProtectedRoute from '../../pages/login/router/ProtectedRoute';
-import { messages } from '../../constants/locale';
-import Queue from '../../queue/queue';
-import Loading from '../loading/Loading';
-import Sidebar from '../sidebar/Sidebar';
+import Queue from '../../packages/queue/queue';
+import Loading from '../ui/interface/loading/Loading';
+import Sidebar from '../ui/interface/sidebar/Sidebar';
 import Introduction from '../../pages/introduction/Introduction';
 import Login from '../../pages/login/Login';
-import Emitter, { TRACKING } from '../../emitter/Emitter';
+import Emitter, { TRACKING } from '../../packages/emitter/Emitter';
 import Tutorial from '../../pages/tutorial/Tutorial';
 import NotFound from '../../pages/notfound/NotFound';
 import TutorialEnd from '../../pages/tutorial-end/TutorialEnd';
@@ -31,11 +31,11 @@ import Survey from '../../pages/survey/Survey';
 import TddIntro from '../../pages/tdd-intro/TddIntro';
 import Tdd from '../../pages/tdd/Tdd';
 import { auth } from '../../pages/login/Auth';
+import config from '../../config';
 
 import './app.scss';
 
-const isDebug = process.env.REACT_APP_DEBUG || false;
-const publicUrl = process.env.PUBLIC_URL || '';
+const { isDebug, publicUrl } = config;
 const queue = new Queue();
 
 const assets = [
